@@ -1,0 +1,20 @@
+# must be defined before figure definition(s) !
+face.falling: res/images/FallingGrey0.gif,res/images/FallingGrey1.gif,res/images/FallingGrey2.gif
+face.sitting: res/images/SittingGrey0.gif,res/images/SittingGrey1.gif
+
+# first parameter is the face-set for falling blocks, the second is the face-set for
+# fallen blocks and the third is the waypoint collection defining the figure
+figure.line: falling; sitting; -1,0|1,0|1,0|1,0
+figure.box: falling; sitting; -1,0|1,0|0,1|-1,0
+figure.delta: falling; sitting; 0,0|0,-1|1,1|-2,0
+figure.z: falling; sitting; -1,0|1,0|0,1|1,0
+figure.s: falling; sitting; -1,0|1,0|0,-1|1,0
+figure.leftangle: falling; sitting; -1,0|1,0|1,0|0,1
+figure.rightangle: falling; sitting; -1,0|1,0|1,0|0,-1
+
+# key bindings
+key.rotate: 8
+key.left: 4
+key.right: 6
+key.fall: 5
+key.bottom: 0
